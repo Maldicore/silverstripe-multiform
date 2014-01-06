@@ -18,7 +18,7 @@ class MultiFormPurgeTask extends DailyTask {
 	 * 
 	 * @var int
 	 */
-	public static $session_expiry_days = 7;
+	private static $session_expiry_days = 7;
 
 	/**
 	 * Run this cron task.

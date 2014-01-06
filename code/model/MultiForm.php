@@ -36,14 +36,14 @@ abstract class MultiForm extends Form {
 	 *
 	 * @var string Classname of a {@link MultiFormStep} subclass
 	 */
-	public static $start_step;
+	private static $start_step;
 	
 	/**
 	 * Set the casting for these fields.
 	 *
 	 * @var array
 	 */
-	public static $casting = array(
+	private static $casting = array(
 		'CompletedStepCount' => 'Int',
 		'TotalStepCount' => 'Int',
 		'CompletedPercent' => 'Float'
@@ -56,7 +56,7 @@ abstract class MultiForm extends Form {
 	 *
 	 * @var array
 	 */
-	public static $ignored_fields = array(
+	private static $ignored_fields = array(
 		'url',
 		'executeForm',
 		'MultiFormSessionID',
@@ -73,7 +73,7 @@ abstract class MultiForm extends Form {
 	 * 
 	 * @var array
 	 */
-	public static $actions_exempt_from_validation = array(
+	private static $actions_exempt_from_validation = array(
 		'action_prev'
 	);
 
